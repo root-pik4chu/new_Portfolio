@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       <TransitionProvider>
-        {/* {isLoading && <Loader onFinished={() => setIsLoading(false)} />} */}
+        {isLoading && <Loader onFinished={() => setIsLoading(false)} />}
         <div className="w-full h-full">
           <BrowserRouter>
             <Routes>

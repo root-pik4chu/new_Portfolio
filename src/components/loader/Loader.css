@@ -1,0 +1,61 @@
+.loader-container {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#loader-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background: #fff;
+    z-index: 1200;
+}
+
+.panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.white-layer {
+    background: #fff;
+    z-index: 900;
+}
+
+.black-layer {
+    background: #000;
+    z-index: 1000;
+}
+
+.loader-ui {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.loader-message {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 80%;
+    font-weight: 300;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .loader-message {
+        font-size: 1.2rem;
+    }
+}
